@@ -1,11 +1,12 @@
 buildscript {
     repositories {
         jcenter()
-        gradlePluginPortal()
+        mavenCentral()
+        maven { url "https://repo.gradle.org/gradle/libs-releases/" }
     }
 
     dependencies {
-        classpath 'org.gradle.api.plugins:gradle-tomcat-plugin:0.9.9'
+        classpath 'org.gradle.api.plugins:gradle-tomcat-plugin:1.2.4'
     }
 }
 
